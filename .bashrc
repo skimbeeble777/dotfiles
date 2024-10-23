@@ -105,5 +105,3 @@ xrdb -merge ~/.Xresources
 
 # linux ssh aliases
 export LINBOX_IP='10.50.28.124'
-alias linrdp='xfreerdp /u:student /v:${LINBOX_IP} /dynamic-resolution +glyph-cache +clipboard'
-alias lincli='ssh student@'$LINBOX_IP
