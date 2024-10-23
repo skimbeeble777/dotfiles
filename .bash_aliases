@@ -16,3 +16,7 @@ alias lincli='ssh student@'$LINBOX_IP
 
 # dotfiles
 alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+
+# kill banner
+# /usr/bin/python3 /usr/local/bin/classification-banner
+alias cbid='ps aux | grep -i "classification-banner" | head -n 1 | awk "{print \$2}"'
