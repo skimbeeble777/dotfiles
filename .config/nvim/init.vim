@@ -1,6 +1,15 @@
 " disable mouse
 set mouse=
 
+" leader = space bar
+let mapleader = " "
+
+" toggle word wrap
+map <leader>; :set wrap!<CR>
+
+" turn of highlight from last search
+map <leader>h :noh<CR>
+
 " indents
 set tabstop=2
 set shiftwidth=2
