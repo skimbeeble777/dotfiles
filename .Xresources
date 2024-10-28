@@ -1,7 +1,7 @@
 ! font
 xterm*faceName: Mononoki Nerd Font Mono
 xterm*faceSize: 11
-xterm*geometry: 204x56
+xterm*geometry: 104x58
 
 ! THEME: gruvbox
 ! hard contrast: *background: #1d2021

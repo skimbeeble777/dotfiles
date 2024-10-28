@@ -10,6 +10,14 @@ imap <C-c> <Esc>
 " toggle word wrap
 map <leader>; :set wrap!<CR>
 
+" open/close/navigate quick fix list
+map <leader>c :copen<CR>
+map <leader>q :cclose<CR>
+map <C-n> :cnext<CR>
+map <C-p> :cprev<CR>
+
+" 
+
 " indents
 set tabstop=2
 set shiftwidth=2
