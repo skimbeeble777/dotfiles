@@ -45,4 +45,3 @@ call plug#end()
 set background=dark
 set termguicolors
 colorscheme gruvbox
-
