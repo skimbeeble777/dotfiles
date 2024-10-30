@@ -1,6 +1,3 @@
-# load .Xresources
-xrdb -load ~/.Xresources
-
 # ~/.bashrc: executed by bash(1) for non-login shells.
 # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
 # for examples
@@ -54,7 +51,13 @@ if [ -n "$force_color_prompt" ]; then
     fi
 fi
 
-PS1=" \[\e[00;34m\]» \W \[\e[0m\]"
+# set the prompt differently when on remote machine
+# TODO: figure out a smarter way to do this
+if [ $USER = "student" ]; then
+	PS1=" \[\e[00;34m\]λ \W \[\e[0m\]"
+else
+	PS1=" \[\e[00;34m\]» \W \[\e[0m\]"
+fi
 
 # enable color support of ls and also add handy aliases
 if [ -x /usr/bin/dircolors ]; then
@@ -89,6 +92,10 @@ if [ -f ~/.bash_aliases ]; then
     . ~/.bash_aliases
 fi
 
+if [ -f ~/.local_vars ]; then
+    . ~/.local_vars
+fi
+
 # enable programmable completion features (you don't need to enable
 # this, if it's already enabled in /etc/bash.bashrc and /etc/profile
 # sources /etc/bash.bashrc).
@@ -99,9 +106,3 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
-
-# set up xrdb
-xrdb -merge ~/.Xresources
-
-# linux ssh aliases
-export LINBOX_IP='10.50.28.124'
