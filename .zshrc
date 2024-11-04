@@ -78,5 +78,18 @@ fi
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias vim="~/nvim-0.10.2/nvim-linux64/bin/nvim"
-alias ll="ls -la"
+
+# some more ls aliases
+alias ll='ls -alF'
+alias la='ls -A'
+alias l='ls -CF'
+
+# common setup
+if [ -f ~/.bash_aliases ]; then
+    . ~/.zsh_aliases
+fi
+
+# local stuff
+if [ -f ~/.local_vars ]; then
+    . ~/.local_vars
+fi
