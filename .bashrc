@@ -52,8 +52,7 @@ if [ -n "$force_color_prompt" ]; then
 fi
 
 # set the prompt differently when on remote machine
-# TODO: figure out a smarter way to do this
-if [ $USER = "student" ]; then
+if [[ -n $SSH_CONNECTION ]]; then
 	PS1=" \[\e[00;34m\]λ \W \[\e[0m\]"
 else
 	PS1=" \[\e[00;34m\]» \W \[\e[0m\]"
