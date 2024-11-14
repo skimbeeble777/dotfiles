@@ -93,3 +93,6 @@ fi
 if [ -f ~/.local_vars ]; then
     . ~/.local_vars
 fi
+
+# unset timeout
+unset TMOUT
