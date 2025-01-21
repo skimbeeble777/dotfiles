@@ -1,6 +1,6 @@
 ! font
-xterm*faceName: Mononoki Nerd Font Mono
-xterm*faceSize: 11
+xterm*faceName: Monoid Nerd Font Mono
+xterm*faceSize: 10
 xterm*geometry: 104x58
 
 ! THEME: gruvbox

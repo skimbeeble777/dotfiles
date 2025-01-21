@@ -85,7 +85,7 @@ alias la='ls -A'
 alias l='ls -CF'
 
 # common setup
-if [ -f ~/.bash_aliases ]; then
+if [ -f ~/.zsh_aliases ]; then
     . ~/.zsh_aliases
 fi
 
